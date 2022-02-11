@@ -8,5 +8,9 @@
   "devDependencies": {
     "nuxt3": "latest",
     "tailwindcss": "^3.0.19"
+  },
+  "dependencies": {
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "date-fns": "^2.28.0"
   }
 }

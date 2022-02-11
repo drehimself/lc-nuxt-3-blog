@@ -2,6 +2,9 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
+  publicRuntimeConfig: {
+    BASE_URL: process.env.BASE_URL,
+  },
   build: {
     postcss: {
       postcssOptions: {
@@ -12,7 +15,5 @@ export default defineNuxtConfig({
       },
     },
   },
-  css: [
-    "~/assets/css/tailwind.css"
-  ],
+  css: ['~/assets/css/tailwind.css'],
 })
